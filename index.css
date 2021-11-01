@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 0.30fr;
+    grid-auto-rows: 85px;
+}
+
+.jokeItem {
+    background-color: rgb(255, 15, 63);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.deleteItem {
+    background-color: rgb(60, 60, 255);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
