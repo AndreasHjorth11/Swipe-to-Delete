@@ -6,7 +6,7 @@ body, html {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 1fr 40%;
     grid-auto-rows: 85px;
 }
 
@@ -26,7 +26,7 @@ main > * {
     grid-row-end: 2;
     padding: 20px;
     cursor: pointer;
-    transition: 0.30s ease;
+    transition: transform 0.30s ease;
 }
 
 .deleteItem {
