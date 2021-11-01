@@ -10,16 +10,25 @@ main {
     grid-auto-rows: 85px;
 }
 
+main > * {
+    display: flex;
+    align-items: center;
+}
+
+
 .jokeItem {
-    background-color: rgb(255, 15, 63);
+    background-color: rgb(15, 127, 255);
+    color: white;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .deleteItem {
-    background-color: rgb(60, 60, 255);
+    background-color: rgb(255, 40, 86);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
