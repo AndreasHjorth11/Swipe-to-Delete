@@ -18,7 +18,7 @@ main > * {
 
 .jokeItem {
     background: rgb(70,48,243);
-background: linear-gradient(90deg, rgba(70,48,243,1) 0%, rgba(43,156,239,1) 12%, rgba(110,48,243,1) 52%, rgba(43,156,239,1) 82%, rgba(70,48,243,1) 100%);
+    background: linear-gradient(90deg, rgba(70,48,243,1) 0%, rgba(43,156,239,1) 12%, rgba(110,48,243,1) 52%, rgba(43,156,239,1) 82%, rgba(70,48,243,1) 100%);
     color: white;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -29,8 +29,8 @@ background: linear-gradient(90deg, rgba(70,48,243,1) 0%, rgba(43,156,239,1) 12%,
 }
 
 .deleteItem {
-    background: rgb(243,48,55);
-background: linear-gradient(90deg, rgba(243,48,55,1) 0%, rgba(142,0,0,1) 12%, rgba(255,0,35,1) 52%, rgba(142,0,0,1) 82%, rgba(243,48,62,1) 100%);
+    background: rgb(173,38,43);
+    background: linear-gradient(90deg, rgba(173,38,43,1) 0%, rgba(255,0,44,1) 50%, rgba(173,38,43,1) 100%);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
