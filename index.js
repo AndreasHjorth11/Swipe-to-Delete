@@ -9,5 +9,10 @@ Joke.addEventListener("touchstart", (e) => {
 Joke.addEventListener("touchmove", (e) => {
     console.log(e.touches[0].clientX);
     touchCordinatesMove = Math.floor(e.touches[0].clientX);
-    Joke.style.transform = `translateX(${-touchCordinatesMove}px)`;
+    if (touchCordinatesMove < touchCordinatesStart) {
+
+        Joke.style.transform = `translateX(${touchCordinatesMove - touchCordinatesStart}px)`;
+    }
+    //Joke.style.transform = 'translateX(-100px)'
+
 });

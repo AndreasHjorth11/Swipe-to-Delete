@@ -17,7 +17,8 @@ main > * {
 
 
 .jokeItem {
-    background-color: rgb(15, 127, 255);
+    background: rgb(70,48,243);
+background: linear-gradient(90deg, rgba(70,48,243,1) 0%, rgba(43,156,239,1) 12%, rgba(110,48,243,1) 52%, rgba(43,156,239,1) 82%, rgba(70,48,243,1) 100%);
     color: white;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -28,9 +29,18 @@ main > * {
 }
 
 .deleteItem {
-    background-color: rgb(255, 40, 86);
+    background: rgb(243,48,55);
+background: linear-gradient(90deg, rgba(243,48,55,1) 0%, rgba(142,0,0,1) 12%, rgba(255,0,35,1) 52%, rgba(142,0,0,1) 82%, rgba(243,48,62,1) 100%);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-trash-alt {
+    font-size: 30px;
+    text-shadow: black 1px 1px 15px;
+    color: white;
 }
