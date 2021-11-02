@@ -4,13 +4,14 @@ body, html {
     box-sizing: border-box;
 }
 
-main {
+.wrapper__div {
     display: grid;
     grid-template-columns: 1fr 40%;
     grid-auto-rows: 85px;
+    margin-top: 20px;
 }
 
-main > * {
+.wrapper__div > * {
     display: flex;
     align-items: center;
 }
@@ -29,6 +30,17 @@ main > * {
     transition: transform 0.30s ease;
 }
 
+.second {
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
 .deleteItem {
     background: rgb(173,38,43);
     background: linear-gradient(90deg, rgba(173,38,43,1) 0%, rgba(255,0,44,1) 50%, rgba(173,38,43,1) 100%);
@@ -40,8 +52,23 @@ main > * {
     justify-content: center;
 }
 
+.second__button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
 .fa-trash-alt {
     font-size: 20px;
     text-shadow: black 1px 1px 15px;
     color: white;
+}
+
+.fa-dice-d20 {
+    margin-left: 20px;
+    font-size: 35px;
+    text-shadow: cyan 1px 1px 4px;
 }

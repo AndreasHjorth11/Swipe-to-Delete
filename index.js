@@ -5,7 +5,11 @@ let touchCoordinatesEnd;
 let deleteButton = window.screen.width * 0.4;
 
 document.querySelector(".deleteItem").addEventListener("click", () => {
-    document.querySelector('main').remove();
+    document.querySelector(".wrapper__div").classList.add("animate__fadeOutLeft");
+    setTimeout(() => {
+
+        document.querySelector('.wrapper__div').remove();
+    }, 800);
 })
 
 Joke.addEventListener("touchstart", (e) => {
