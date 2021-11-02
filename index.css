@@ -5,11 +5,17 @@ body, html {
 }
 
 .wrapper__div {
+    height: 85px;
     display: grid;
     grid-template-columns: 1fr 40%;
     grid-auto-rows: 85px;
     margin-top: 20px;
+    transition: height 0.15s ease;
 }
+
+.collapsed {
+    height: 0;
+} 
 
 .wrapper__div > * {
     display: flex;
@@ -27,7 +33,7 @@ body, html {
     grid-row-end: 2;
     padding: 20px;
     cursor: pointer;
-    transition: transform 0.30s ease;
+    transition: transform 0.10s ease;
 }
 
 .second {
