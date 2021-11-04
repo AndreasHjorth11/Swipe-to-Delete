@@ -4,6 +4,15 @@ body, html {
     box-sizing: border-box;
 }
 
+body {
+    
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+
+
+
 .wrapper__div {
     height: 85px;
     display: grid;
@@ -20,6 +29,7 @@ body, html {
 .wrapper__div > * {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -34,6 +44,9 @@ body, html {
     padding: 20px;
     cursor: pointer;
     transition: transform 0.10s ease;
+    font-size: 18px;
+    font-family: 'Baloo Chettan 2';
+    
 }
 
 .second {
@@ -77,4 +90,8 @@ body, html {
     margin-left: 20px;
     font-size: 35px;
     text-shadow: cyan 1px 1px 4px;
+}
+
+.fa-user-friends {
+    
 }
