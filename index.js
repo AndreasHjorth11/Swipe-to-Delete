@@ -34,6 +34,7 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
         }
     });
     document.querySelector(".deleteItem").addEventListener("click", () => {
+      document.querySelector(".wrapper__div").classList.add("animate__animated");
       document.querySelector(".wrapper__div").classList.add("animate__fadeOutLeft");
       setTimeout(() => {
     
