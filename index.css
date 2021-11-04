@@ -6,7 +6,6 @@ body, html {
 
 body {
     
-    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
@@ -20,6 +19,7 @@ body {
     grid-auto-rows: 85px;
     margin-top: 20px;
     transition: height 0.15s ease;
+    
 }
 
 .collapsed {
