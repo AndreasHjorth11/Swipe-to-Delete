@@ -5,7 +5,7 @@ axios.get('https://jsonplaceholder.typicode.com/users/')
   users.forEach(users => {
       const main = document.querySelector('main');
     
-      const wrapper = document.createElement('section');
+      const wrapper = document.createElement('div');
       wrapper.classList.add("wrapper__div");
       wrapper.setAttribute('id', users.id);
     

@@ -33,19 +33,19 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
             touchElement.style.transform = `translateX(0px)`
         }
     });
+
     document.querySelector(".deleteItem").addEventListener("click", () => {
       document.querySelector(".wrapper__div").classList.add("animate__animated");
       document.querySelector(".wrapper__div").classList.add("animate__fadeOutLeft");
       setTimeout(() => {
-    
           document.querySelector(".wrapper__div").classList.add("collapsed");
       }, 800);
     
       setTimeout(() => {
-          document.querySelector(".wrapper__div").remove();
+        document.querySelector(".wrapper__div").remove();
       }, 900);
 });
-
+ 
 
 
 
