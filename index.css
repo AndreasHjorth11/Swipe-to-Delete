@@ -5,7 +5,8 @@ body, html {
 }
 
 body {
-    
+    background: rgba(98, 33, 248, 0.986);
+    background: linear-gradient(90deg, rgb(151, 232, 247) 0%, rgb(151, 232, 247) 50%, rgb(151, 232, 247) 100%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
@@ -34,8 +35,8 @@ body {
 
 
 .jokeItem {
-    background: rgb(70,48,243);
-    background: linear-gradient(90deg, rgba(70,48,243,1) 0%, rgba(43,156,239,1) 12%, rgba(110,48,243,1) 52%, rgba(43,156,239,1) 82%, rgba(70,48,243,1) 100%);
+    background: rgb(48, 51, 243);
+    background: linear-gradient(90deg, rgb(93, 217, 255) 0%, rgb(45, 94, 255) 12%, rgb(30, 50, 117) 52%, rgb(45, 94, 255) 82%, rgba(93, 217, 255) 100%);
     color: white;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -46,7 +47,7 @@ body {
     transition: transform 0.10s ease;
     font-size: 18px;
     font-family: 'Baloo Chettan 2';
-    
+    box-shadow: rgb(1, 108, 248) 1px 1px 10px;
 }
 
 .second {
@@ -89,7 +90,7 @@ body {
 .fa-dice-d20 {
     margin-left: 20px;
     font-size: 35px;
-    text-shadow: cyan 1px 1px 4px;
+    text-shadow: rgb(93, 217, 255) 1px 1px 10px;
 }
 
 .fa-user-friends {
