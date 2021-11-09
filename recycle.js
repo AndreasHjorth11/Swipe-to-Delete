@@ -4,10 +4,10 @@ recycle.forEach(recycleItem => {
     /* let result = recycleItem; */
     console.log(recycleItem);
     const main = document.querySelector('main');
-    const wrapper = document.createElement('div');
-    wrapper.classList.add("wrapper__div");
+      const wrapper = document.createElement('section');
+      wrapper.classList.add("wrapper__div");
 
-    wrapper.setAttribute('id', recycleItem.id);
+      wrapper.setAttribute('id', recycleItem.id);
 
       const deleteItem = document.createElement("div");
       deleteItem.classList.add("deleteItem");

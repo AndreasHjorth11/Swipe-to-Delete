@@ -12,29 +12,33 @@ let localStorageTrash = JSON.parse(localStorage.getItem("deletedItems"))
 
 document.querySelector('main').addEventListener('touchstart', (e) => {
     touchElement = e.target;
-    touchParentElement = e.target.parentElement;
+    touchParentElement = e.target.closest("section");
     touchCoordinatesStart = e.touches[0].clientX;
 
     touchElement.addEventListener("touchmove", (e) => {
-        //console.log(e.touches[0].clientX);
-        touchCoordinatesMove = Math.floor(e.touches[0].clientX);
-        if (touchCoordinatesMove < touchCoordinatesStart && 
-            touchCoordinatesMove > touchCoordinatesStart - deleteButton) {
-    
-            touchElement.style.transform = `translateX(${touchCoordinatesMove - touchCoordinatesStart}px)`;
+        if(touchElement.tagName == "ARTICLE"){
+            //console.log(e.touches[0].clientX);
+            touchCoordinatesMove = Math.floor(e.touches[0].clientX);
+            if (touchCoordinatesMove < touchCoordinatesStart && 
+                touchCoordinatesMove > touchCoordinatesStart - deleteButton) {
+        
+                touchElement.style.transform = `translateX(${touchCoordinatesMove - touchCoordinatesStart}px)`;
+            }
         }
         //touchElement.style.transform = 'translateX(-100px)'
     
     });
     
     touchElement.addEventListener('touchend', (e) => {
-        touchCoordinatesEnd = Math.floor(e.changedTouches[0].clientX);
-        if (touchCoordinatesEnd < touchCoordinatesStart - deleteButton / 2 ) {
-            //console.log("test");
-            touchElement.style.transform = `translateX(-${deleteButton}px)`;
-        }
-        else {
-            touchElement.style.transform = `translateX(${e.target.offsetLeft})`;
+        if(touchElement.tagName == "ARTICLE") {
+            touchCoordinatesEnd = Math.floor(e.changedTouches[0].clientX);
+            if (touchCoordinatesEnd < touchCoordinatesStart - deleteButton / 2 ) {
+                //console.log("test");
+                touchElement.style.transform = `translateX(-${deleteButton}px)`;
+            }
+            else {
+                touchElement.style.transform = `translateX(${e.target.offsetLeft})`;
+            }
         }
     });
 
@@ -49,7 +53,12 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
       }
       
       localStorageTrash = localStorageTrash.filter((item) => userObject.id !== item.id);
+        if(localStorageTrash.length > 0){
         localStorage.setItem("deletedItems", JSON.stringify(localStorageTrash));
+        } else {
+        localStorage.clear();
+        };
+
         console.log(localStorageTrash);
        setTimeout(() => {
           touchParentElement.classList.add("collapsed");
