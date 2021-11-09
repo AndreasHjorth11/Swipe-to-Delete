@@ -108,22 +108,33 @@ body {
 nav {
     height: 50px;
     display: flex;
-    justify-content: space-between;
     align-content: center;
-    margin-top: -11px;
+    justify-content: center;
+    margin-top: -12px;
     background: rgb(48, 51, 243);
-    background: linear-gradient(90deg, rgb(255, 166, 93) 0%, rgb(255, 137, 41) 12%, rgb(240, 207, 17) 52%, rgb(255, 137, 41) 82%, rgb(255, 166, 93) 100%);
+    background: linear-gradient(90deg, rgb(255, 93, 93) 0%, rgb(255, 41, 41) 12%, rgb(240, 17, 17) 52%, rgb(255, 41, 41) 82%, rgb(255, 93, 93) 100%);
+    box-shadow: red 1px 1px 10px;
 }
 
 h2 {
     color: white;
     align-self: center;
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
+    font-size: 25px;
+    font-family: 'Dela Gothic One', cursive;
 }
 
 .trash-2 {
     margin: 20px;
     align-self: center;
     color: white;
+}
+
+.deleteButton__large {
+    justify-self: center;
+}
+
+.delete__nav {
+    color: black;
 }
