@@ -6,10 +6,9 @@ let touchElement;
 let touchParentElement;
 let deleteButton = window.screen.width * 0.4;
 let deleteStorage = window.localStorage;
-let userList = [];
-if(localStorage.getItem('deletedItems')){
-    userList = JSON.parse(localStorage.getItem('deletedItems'))
-}
+
+
+let localStorageTrash = JSON.parse(localStorage.getItem("deletedItems"))
 
 document.querySelector('main').addEventListener('touchstart', (e) => {
     touchElement = e.target;
@@ -42,17 +41,16 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
     touchParentElement.querySelector(".deleteItem").onclick = () => {
       touchParentElement.classList.add("animate__animated");
       touchParentElement.classList.add("animate__fadeOutLeft");
-     
+     /*  let deletedItemId = e.target.parentElement.id; */
+
       let userObject = {
           id: touchParentElement.id,
           name: touchParentElement.querySelector('.swipeItem').textContent
       }
-
-        userList.push(userObject)
       
-      console.log(userList);
-      localStorage.setItem('deletedItems', JSON.stringify(userList));
-      
+      localStorageTrash = localStorageTrash.filter((item) => userObject.id !== item.id);
+        localStorage.setItem("deletedItems", JSON.stringify(localStorageTrash));
+        console.log(localStorageTrash);
        setTimeout(() => {
           touchParentElement.classList.add("collapsed");
       }, 800);
@@ -61,15 +59,6 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
         touchParentElement.remove();
       }, 900);  
 };
- 
 
-
-
-
-
-
-    /* Joke.addEventListener("touchstart", (e) => {
-    //console.log(e.touches[0].clientX);
-    touchCoordinatesStart = e.touches[0].clientX; */
 });
- 
+

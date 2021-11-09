@@ -6,7 +6,7 @@ body, html {
 
 body {
     background: rgba(98, 33, 248, 0.986);
-    background: linear-gradient(90deg, rgb(151, 232, 247) 0%, rgb(151, 232, 247) 50%, rgb(151, 232, 247) 100%);
+    background: linear-gradient(90deg, rgb(255, 197, 71) 0%, rgb(255, 197, 71) 50%, rgb(255, 197, 71) 100%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
@@ -36,7 +36,7 @@ body {
 
 .swipeItem {
     background: rgb(48, 51, 243);
-    background: linear-gradient(90deg, rgb(93, 217, 255) 0%, rgb(45, 94, 255) 12%, rgb(30, 50, 117) 52%, rgb(45, 94, 255) 82%, rgba(93, 217, 255) 100%);
+    background: linear-gradient(90deg, rgb(255, 198, 93) 0%, rgb(255, 146, 45) 12%, rgb(245, 33, 33) 52%, rgb(255, 146, 45) 82%, rgba(255, 198, 93) 100%);
     color: white;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -47,7 +47,7 @@ body {
     transition: transform 0.10s ease;
     font-size: 18px;
     font-family: 'Baloo Chettan 2';
-    box-shadow: rgb(1, 108, 248) 1px 1px 10px;
+    box-shadow: rgb(248, 100, 1) 1px 1px 10px;
 }
 
 .second {
@@ -90,7 +90,7 @@ body {
 .fa-dice-d20 {
     margin-left: 20px;
     font-size: 35px;
-    text-shadow: rgb(93, 217, 255) 1px 1px 10px;
+    text-shadow: rgb(250, 59, 59) 1px 1px 10px;
 }
 
 .fa-user-friends {
