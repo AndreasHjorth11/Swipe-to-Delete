@@ -1,3 +1,3 @@
 # Swipe-to-Delete
 
-![image](https://user-images.githubusercontent.com/77662628/158342168-e04d3b03-d5de-44c8-b50a-5560f8290158.png)
+![image](https://user-images.githubusercontent.com/77662628/158342292-78184d04-a42b-4a41-8460-27c1fbe89d25.png)
